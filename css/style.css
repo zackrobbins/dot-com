@@ -6,49 +6,85 @@
     }
 
 body {
-    height: 80%;
-    padding: 10% 0;
+/*    height: 80%;*/
+    padding: 30vh 0;
 }
 
-.text-wrapper {
+.page-title {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 0;
     z-index: 1;
-    
-    font-size: 30px;
-    font-family: sans-serif, 'Lifted-Serif','VLNL Wurst','Untitled Serif','SuisseNeueTrial', 'SuisseIntlTrial-Book';
-    line-height: 1;
 }
 
-.text-wrapper p {
+.page-title p {
     display: inline;
 }
 
 .module {
-/*    width: 100%;*/
-    background-color: red;
     z-index: 100;
     position: relative; 
-    
-    margin: 0 0 3em 0;
+    margin: 0 0 10em 0;
+}
+
+.text-wrapper {    
+    font-size: 24px;
+    font-family: sans-serif, 'Lifted-Serif','VLNL Wurst','Untitled Serif','SuisseNeueTrial', 'SuisseIntlTrial-Book';
+    line-height: 1;
 }
 
 .image-wrapper {
-    max-width: 400px;
-    margin: auto;
-    padding: 0 20px;
+    max-width: 600px;
+    margin: 0 auto 10em;
+/*    padding: 0 20px;*/
+
 }
 
 img {
     width: 100%;
     height: auto;
     
-    filter: blur(35px);
+    filter: blur(70px);
 }
 
 img:hover {
     filter: blur(0);
 }
+
+
+/*
+=====================
+Columns
+=====================
+*/
+
+.column {
+    float: left;
+    }
+
+.column-quarter {
+    width: 25%;
+    }
+
+.column-half {
+    width: 50%;
+    }
+
+.title {
+    font-family: serif;
+    font-style: italic;
+    text-transform: capitalize;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-left {padding: 10px 10px 10px 0;}
+.column-middle {padding:10px}
+.column-right {padding: 10px 0 10px 10px;}

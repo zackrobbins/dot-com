@@ -6,85 +6,30 @@
     }
 
 body {
-/*    height: 80%;*/
-    padding: 30vh 0;
+    width: 100%;
+    font-family: Arial Technique, serif;
 }
 
-.page-title {
+.text-scroll {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    padding: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
-.page-title p {
-    display: inline;
-}
-
-.module {
-    z-index: 100;
-    position: relative; 
-    margin: 0 0 10em 0;
-}
-
-.text-wrapper {    
-    font-size: 24px;
-    font-family: sans-serif, 'Lifted-Serif','VLNL Wurst','Untitled Serif','SuisseNeueTrial', 'SuisseIntlTrial-Book';
-    line-height: 1;
+marquee {
+    z-index: 10;
+    font-weight: normal;
+    font-size: 70px;   
+    color: black;
 }
 
 .image-wrapper {
-    max-width: 600px;
-    margin: 0 auto 10em;
-/*    padding: 0 20px;*/
-
+    max-width: 300px;
+    margin: auto;
+    z-index: 200;
 }
 
 img {
     width: 100%;
-    height: auto;
-    
-    filter: blur(70px);
+    z-index: 250;
 }
-
-img:hover {
-    filter: blur(0);
-}
-
-
-/*
-=====================
-Columns
-=====================
-*/
-
-.column {
-    float: left;
-    }
-
-.column-quarter {
-    width: 25%;
-    }
-
-.column-half {
-    width: 50%;
-    }
-
-.title {
-    font-family: serif;
-    font-style: italic;
-    text-transform: capitalize;
-    }
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column-left {padding: 10px 10px 10px 0;}
-.column-middle {padding:10px}
-.column-right {padding: 10px 0 10px 10px;}
